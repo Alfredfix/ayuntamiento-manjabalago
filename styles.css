@@ -72,10 +72,10 @@ a:hover {
 }
 
 .escudo-img {
-    height: 80px;
+    height: 120px;
     width: auto;
     background: rgba(255, 255, 255, 0.9);
-    padding: 5px;
+    padding: 8px;
     border-radius: 4px;
 }
 
