@@ -8,241 +8,254 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-content">
-                    <div class="logo-section">
-                        <div class="escudo">🏛️</div>
-                        <div class="title-section">
-                            <h1>Ayuntamiento de Manjabalago</h1>
-                            <p class="subtitle">Portal Oficial</p>
-                        </div>
-                    </div>
-                    <div class="search-section">
-                        <input type="text" placeholder="Buscar..." class="search-input" id="searchInput">
-                        <button class="search-btn" id="searchBtn">🔍</button>
-                    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container-wrapper">
+            <div class="top-bar-content">
+                <div class="logo-wrapper">
+                    <img src="https://torrecampo.es/wp-content/uploads/2020/03/escudo.png" alt="Escudo Ayuntamiento" class="escudo-img">
+                </div>
+                <div class="search-wrapper">
+                    <form class="search-form">
+                        <input type="search" placeholder="Buscar..." class="search-field">
+                        <button type="submit" class="search-submit">
+                            <span>🔍</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Navigation -->
-        <nav class="main-nav">
-            <div class="container">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#ayuntamiento">Ayuntamiento</a>
-                        <ul class="dropdown">
-                            <li><a href="#corporacion">Corporación Municipal</a></li>
-                            <li><a href="#organigrama">Organigrama</a></li>
-                            <li><a href="#plenos">Plenos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#ciudad">La Ciudad</a>
-                        <ul class="dropdown">
-                            <li><a href="#historia">Historia</a></li>
-                            <li><a href="#patrimonio">Patrimonio</a></li>
-                            <li><a href="#datos">Datos Municipales</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#turismo">Turismo</a>
-                        <ul class="dropdown">
-                            <li><a href="#monumentos">Monumentos</a></li>
-                            <li><a href="#rutas">Rutas</a></li>
-                            <li><a href="#gastronomia">Gastronomía</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#servicios">Servicios</a>
-                        <ul class="dropdown">
-                            <li><a href="#tributos">Tributos</a></li>
-                            <li><a href="#obras">Obras y Proyectos</a></li>
-                            <li><a href="#empleo">Empleo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#transparencia">Transparencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sede">Sede Electrónica</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <!-- Main Navigation -->
+    <nav class="main-navigation">
+        <div class="container-wrapper">
+            <ul class="nav-menu">
+                <li class="menu-item menu-item-has-children">
+                    <a href="#ayuntamiento">Ayuntamiento</a>
+                    <ul class="sub-menu">
+                        <li><a href="#corporacion">Corporación Municipal</a></li>
+                        <li><a href="#organigrama">Organigrama</a></li>
+                        <li><a href="#plenos">Plenos Municipales</a></li>
+                        <li><a href="#ordenanzas">Ordenanzas</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#residencia">Residencia de Mayores</a>
+                    <ul class="sub-menu">
+                        <li><a href="#servicios-residencia">Servicios</a></li>
+                        <li><a href="#instalaciones">Instalaciones</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#ciudad">La Ciudad</a>
+                    <ul class="sub-menu">
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#patrimonio">Patrimonio</a></li>
+                        <li><a href="#datos">Datos Municipales</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#turismo">Turismo</a>
+                    <ul class="sub-menu">
+                        <li><a href="#monumentos">Monumentos</a></li>
+                        <li><a href="#rutas">Rutas</a></li>
+                        <li><a href="#gastronomia">Gastronomía</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#transparencia">Transparencia</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sede">Sede Electrónica</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-slider">
-            <div class="hero-slide active">
-                <img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1600&h=600&fit=crop" alt="Plaza del Ayuntamiento">
-                <div class="hero-overlay">
-                    <div class="container">
-                        <h2>Bienvenidos a Manjabalago</h2>
-                        <p>Tu municipio, tu casa</p>
-                    </div>
-                </div>
+    <!-- Hero/Banner Section -->
+    <div class="hero-banner">
+        <div class="container-wrapper">
+            <div class="banner-content">
+                <img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200&h=500&fit=crop" alt="Manjabalago" class="banner-image">
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
+    <main class="main-container">
+        <div class="container-wrapper">
+
             <!-- Noticias Section -->
-            <section class="section noticias">
-                <h2 class="section-title">Últimas Noticias</h2>
-                <div class="noticias-grid">
-                    <article class="noticia-card">
-                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=250&fit=crop" alt="Actividades Navideñas">
-                        <div class="noticia-content">
-                            <h3>Programa de Actividades Navideñas 2024</h3>
-                            <p class="noticia-date">10 de Diciembre, 2024</p>
-                            <p>Descubre todas las actividades preparadas para estas fiestas.</p>
-                            <a href="#" class="btn-leer-mas">Leer más</a>
+            <section class="content-section">
+                <h2 class="section-heading">Últimas Noticias</h2>
+                <div class="posts-grid">
+                    <article class="post-item">
+                        <div class="post-thumbnail">
+                            <a href="#">
+                                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=250&fit=crop" alt="Navidad">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <p class="post-meta">Dic 10, 2024</p>
+                            <h3 class="post-title">
+                                <a href="#">Programa de Actividades Navideñas 2024</a>
+                            </h3>
+                            <div class="post-excerpt">
+                                <p>El Ayuntamiento de Manjabalago presenta su programa de actividades navideñas con numerosas propuestas para todas las edades.</p>
+                            </div>
+                            <a href="#" class="read-more">Leer más →</a>
                         </div>
                     </article>
 
-                    <article class="noticia-card">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=250&fit=crop" alt="Concurso de Belenes">
-                        <div class="noticia-content">
-                            <h3>XV Concurso de Belenes</h3>
-                            <p class="noticia-date">5 de Diciembre, 2024</p>
-                            <p>Participa en nuestro tradicional concurso de belenes navideños.</p>
-                            <a href="#" class="btn-leer-mas">Leer más</a>
+                    <article class="post-item">
+                        <div class="post-thumbnail">
+                            <a href="#">
+                                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=250&fit=crop" alt="Belenes">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <p class="post-meta">Dic 5, 2024</p>
+                            <h3 class="post-title">
+                                <a href="#">XV Concurso Municipal de Belenes</a>
+                            </h3>
+                            <div class="post-excerpt">
+                                <p>Ya está abierto el plazo de inscripción para participar en el tradicional concurso de belenes navideños de nuestra localidad.</p>
+                            </div>
+                            <a href="#" class="read-more">Leer más →</a>
                         </div>
                     </article>
 
-                    <article class="noticia-card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Ayudas Sociales">
-                        <div class="noticia-content">
-                            <h3>Nuevas Ayudas y Subvenciones</h3>
-                            <p class="noticia-date">1 de Diciembre, 2024</p>
-                            <p>Información sobre las nuevas líneas de ayuda disponibles.</p>
-                            <a href="#" class="btn-leer-mas">Leer más</a>
+                    <article class="post-item">
+                        <div class="post-thumbnail">
+                            <a href="#">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Subvenciones">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <p class="post-meta">Dic 1, 2024</p>
+                            <h3 class="post-title">
+                                <a href="#">Nuevas Líneas de Ayudas y Subvenciones</a>
+                            </h3>
+                            <div class="post-excerpt">
+                                <p>Publicadas las bases para la concesión de ayudas sociales y subvenciones a asociaciones locales para el ejercicio 2025.</p>
+                            </div>
+                            <a href="#" class="read-more">Leer más →</a>
                         </div>
                     </article>
 
-                    <article class="noticia-card">
-                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&h=250&fit=crop" alt="Actividades Culturales">
-                        <div class="noticia-content">
-                            <h3>Agenda Cultural de Invierno</h3>
-                            <p class="noticia-date">28 de Noviembre, 2024</p>
-                            <p>Conciertos, teatro y exposiciones para los próximos meses.</p>
-                            <a href="#" class="btn-leer-mas">Leer más</a>
+                    <article class="post-item">
+                        <div class="post-thumbnail">
+                            <a href="#">
+                                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&h=250&fit=crop" alt="Cultura">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <p class="post-meta">Nov 28, 2024</p>
+                            <h3 class="post-title">
+                                <a href="#">Agenda Cultural de Invierno 2024-2025</a>
+                            </h3>
+                            <div class="post-excerpt">
+                                <p>Presentada la programación cultural con teatro, conciertos, exposiciones y actividades para los próximos meses.</p>
+                            </div>
+                            <a href="#" class="read-more">Leer más →</a>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <!-- Enlaces de Interés -->
-            <section class="section enlaces-interes">
-                <h2 class="section-title">Enlaces de Interés</h2>
-                <div class="enlaces-grid">
-                    <a href="#plenos" class="enlace-card">
-                        <div class="enlace-icon">📋</div>
-                        <h3>Plenos Municipales</h3>
-                        <p>Actas y acuerdos</p>
+            <!-- Enlaces Destacados -->
+            <section class="content-section destacados-section">
+                <h2 class="section-heading">Enlaces de Interés</h2>
+                <div class="destacados-grid">
+                    <a href="#" class="destacado-item">
+                        <div class="destacado-image">
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop" alt="Plenos">
+                        </div>
+                        <div class="destacado-title">Plenos Municipales</div>
                     </a>
 
-                    <a href="#inventario" class="enlace-card">
-                        <div class="enlace-icon">🗺️</div>
-                        <h3>Inventario de Caminos</h3>
-                        <p>Vías públicas</p>
+                    <a href="#" class="destacado-item">
+                        <div class="destacado-image">
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=300&fit=crop" alt="Inventario">
+                        </div>
+                        <div class="destacado-title">Inventario de Caminos Públicos</div>
                     </a>
 
-                    <a href="#empleo" class="enlace-card">
-                        <div class="enlace-icon">💼</div>
-                        <h3>Empleo Público</h3>
-                        <p>Ofertas y convocatorias</p>
+                    <a href="#" class="destacado-item">
+                        <div class="destacado-image">
+                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=300&fit=crop" alt="Certamen">
+                        </div>
+                        <div class="destacado-title">Certamen de Narrativa</div>
                     </a>
 
-                    <a href="#industrial" class="enlace-card">
-                        <div class="enlace-icon">🏭</div>
-                        <h3>Polígono Industrial</h3>
-                        <p>Información empresarial</p>
+                    <a href="#" class="destacado-item">
+                        <div class="destacado-image">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" alt="Polígono">
+                        </div>
+                        <div class="destacado-title">Polígono Industrial</div>
                     </a>
                 </div>
             </section>
 
-            <!-- Eventos y Cartelería -->
-            <section class="section eventos">
-                <h2 class="section-title">Próximos Eventos</h2>
-                <div class="eventos-grid">
-                    <div class="evento-card">
-                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=350&h=500&fit=crop" alt="Concierto">
-                        <div class="evento-overlay">
-                            <h3>Concierto de Primavera</h3>
-                            <p>20 de Marzo, 2025</p>
-                        </div>
+            <!-- Cartelería/Eventos -->
+            <section class="content-section carteleria-section">
+                <h2 class="section-heading">Próximos Eventos</h2>
+                <div class="carteleria-grid">
+                    <div class="cartel-item">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=300&h=450&fit=crop" alt="Concierto">
                     </div>
-
-                    <div class="evento-card">
-                        <img src="https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=350&h=500&fit=crop" alt="Feria">
-                        <div class="evento-overlay">
-                            <h3>Feria Agro 2025</h3>
-                            <p>15-17 de Abril, 2025</p>
-                        </div>
+                    <div class="cartel-item">
+                        <img src="https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=300&h=450&fit=crop" alt="Feria">
                     </div>
-
-                    <div class="evento-card">
-                        <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=350&h=500&fit=crop" alt="Teatro">
-                        <div class="evento-overlay">
-                            <h3>Ciclo de Teatro</h3>
-                            <p>Temporada 2025</p>
-                        </div>
+                    <div class="cartel-item">
+                        <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=300&h=450&fit=crop" alt="Teatro">
                     </div>
-
-                    <div class="evento-card">
-                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=350&h=500&fit=crop" alt="Exposición">
-                        <div class="evento-overlay">
-                            <h3>Exposición Fotográfica</h3>
-                            <p>Todo el año</p>
-                        </div>
+                    <div class="cartel-item">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=300&h=450&fit=crop" alt="Exposición">
                     </div>
                 </div>
             </section>
+
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+    <footer class="site-footer">
+        <div class="container-wrapper">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3>Ayuntamiento de Manjabalago</h3>
+                    <p>Plaza Mayor, 1<br>14410 Manjabalago</p>
+                    <p>CIF: P1234567-A</p>
+                </div>
+
+                <div class="footer-widget">
                     <h3>Contacto</h3>
-                    <p>📍 Plaza Mayor, 1</p>
-                    <p>📞 Tel: 123 456 789</p>
-                    <p>✉️ info@manjabalago.es</p>
+                    <p>Email: ayuntamiento@manjabalago.es</p>
+                    <p>Teléfono: 957 123 456</p>
+                    <p>Fax: 957 123 457</p>
                 </div>
 
-                <div class="footer-section">
-                    <h3>Horario de Atención</h3>
-                    <p>Lunes a Viernes:</p>
-                    <p>9:00h - 14:00h</p>
+                <div class="footer-widget">
+                    <h3>Enlaces</h3>
+                    <ul class="footer-links">
+                        <li><a href="#aviso-legal">Aviso Legal</a></li>
+                        <li><a href="#accesibilidad">Accesibilidad</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#mapa">Mapa Web</a></li>
+                    </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-widget">
                     <h3>Síguenos</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Twitter</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
                     </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Enlaces Legales</h3>
-                    <a href="#aviso-legal">Aviso Legal</a>
-                    <a href="#privacidad">Política de Privacidad</a>
-                    <a href="#accesibilidad">Accesibilidad</a>
                 </div>
             </div>
 
